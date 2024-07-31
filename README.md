@@ -1,5 +1,7 @@
 # Gesture Clash
 
+![Project_012_Rock_Paper_Scissors_Game](https://github.com/user-attachments/assets/fc64cf00-90ff-46da-9f7c-61ed7673b66e)
+
 A project to implement the classic Rock-Paper-Scissors game using HTML, CSS, and JavaScript. The game allows a player to compete against the computer, keeping track of scores and displaying results based on the player's and computer's choices.
 
 ## Features
