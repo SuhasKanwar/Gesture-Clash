@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
+    background: rgb(83,96,147);
+    background: radial-gradient(circle, rgba(83,96,147,1) 7%, rgba(3,56,119,1) 100%);
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#heading{
+    font-family: 'Bebas Neue', sans-serif;
+    color: azure;
+    font-size: 5rem;
+    font-weight: 900;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+}
+.scorecard{
+    color: azure;
+    width: 40%;
+    border: 2px solid rgb(220, 201, 201);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.4rem;
+}
+.scorecard-text p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Bebas Neue';
+}
+.score-display{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1rem;
+}
+.score-container{
+    width: 45%;
+    background-color: azure;
+    border-radius: 5px;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.score-text{
+    color: rgb(83,96,147);
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+.score{
+    margin-top: 0.3rem;
+    color: rgb(83,96,147);
+    font-size: 3rem;
+    font-weight: 900;
+}
+main{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+}
+.your-choice-container, .computer-choice-conatiner{
+    width: 30vw;
+    height: 39vh;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 15px;
+    align-items: center;
+    padding: 0.9rem 0;
+}
+.choices{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 0.7rem;
+}
+.choice img{
+    width: 115px;
+    height: 115px;
+    transition: all 0.1s linear 0s;
+}
+.choice{
+    width: 115px;
+    height: 115px;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.1s linear 0s;
+}
+.your-choice-container h2, .computer-choice-conatiner h2{
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.computer-choice{
+    height: 115px;
+    width: 115px;
+}
+.choice-msg{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.computer-choice-text, .your-choice-text{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+#comp-choice{
+    height: 115px;
+    width: 115px;
+    display: none;
+}
+.result-msg-container{
+    width: 14vw;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #cfd11a;
+    font-size: 1.8rem;
+    font-weight: 900;
+    /* -webkit-text-stroke: 1px black; */
+    text-align: center;
+    color: azure;
+    display: span;
+}
+.reset-button-container{
+    margin-top: 10vh;
+}
+#reset-button{
+    background-color: #3DD1E7;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.3rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 460px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: transform 1s linear 0;
+}
+#reset-button:focus{
+    outline: 0;
+}
+#reset-button:after{
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+#reset-button:hover:after{
+    bottom: 2px;
+    left: 2px;
+}
+#reset-button:hover{
+    transform: scale(1.07);
+}
+.choice:hover{
+    opacity: 0.9;
+    transform: scale(1.01);
+    cursor: pointer;
+}

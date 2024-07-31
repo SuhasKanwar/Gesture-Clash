@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Suhas Kanwar">
+        <meta name="keywords" content="Rock-Paper-Scissors, Rock, Paper, Scissor, game, classic game, multiplayer">
+        <meta name="Description" content="Play the classic Rock-Paper-Scissors game. Enjoy a simple, fun, and interactive game with friends.">
+        <title>Gesture Clash</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="assets/style_sheets/Project_012_styles.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <header>
+                <h1 id="heading">Gesture Clash </h1>
+            </header>
+
+            <div class="scorecard">
+                <div class="scorecard-text">
+                    <p>Rock🪨</p>
+                    <p>Paper📄</p>
+                    <p>Scissors✂️</p>
+                </div>
+                <div class="score-display">
+                    <div class="score-container">
+                        <div class="score-text">Player</div>
+                        <div class="score user-score">0</div>
+                    </div>
+                    <div class="score-container">
+                        <div class="score-text">Computer</div>
+                        <div class="score computer-score">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <main>
+                <div class="your-choice-container">
+                    <h2>Player</h2>
+                    <div class="choices">
+                        <div class="choice" id="rock">
+                            <img src="assets/images/rock.png" alt="rock-image">
+                        </div>
+                        <div class="choice" id="paper">
+                            <img src="assets/images/paper.png" alt="paper-image">
+                        </div>
+                        <div class="choice" id="scissor">
+                            <img src="assets/images/scissor.png" alt="scissors-image">
+                        </div>
+                    </div>
+                    <p class="choice-msg">
+                        Your Choice: <div class="your-choice-text"></div>
+                    </p>
+                </div>
+                <div class="result-msg-container">
+                    <span id="result-msg">Make Move</span>
+                </div>
+                <div class="computer-choice-conatiner">
+                    <h2>Computer</h2>
+                    <div class="computer-choice">
+                        <img src="" alt="comp-choice" id="comp-choice">
+                    </div>
+                    <p class="choice-msg">
+                        Computer Choice: <div class="computer-choice-text"></div>
+                    </p>
+                </div>
+            </main>
+
+            <div class="reset-button-container">
+                <button id="reset-button">Reset Game</button>
+            </div>
+
+        </div>
+
+        <script src="scripts/app.js"></script>
+    </body>
+</html>
